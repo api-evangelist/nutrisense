@@ -1,7 +1,27 @@
 aid: nutrisense
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nutrisense.png
 name: NutriSense
-description: NutriSense is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  NutriSense is a metabolic health and wellness company that pairs continuous
+  glucose monitoring (CGM) with 1:1 registered-dietitian coaching and a mobile
+  app. Members receive glucose biosensors, real-time and historical glucose
+  analytics, AI-assisted pattern insights, stress-management sessions, and video
+  consults with credentialed, glucose-certified nutritionists to build
+  sustainable nutrition, weight-loss, and metabolic-health habits. Nutrisense
+  runs a consumer product with a member web and mobile app experience; as of this
+  profile it does not publish a public developer API, developer portal, or
+  OpenAPI. It does publish a machine-readable llms.txt at nutrisense.io/llms.txt.
 url: https://raw.githubusercontent.com/api-evangelist/nutrisense/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Health
+- Wellness
+- Continuous Glucose Monitoring
+- Nutrition
+- Metabolic Health
+- Digital Health
+- Coaching
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,28 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/nutrisense-domain-security.yml
 - type: Website
   url: https://nutrisense.io/
+- type: Support
+  url: https://support.nutrisense.io
+- type: Blog
+  url: https://www.nutrisense.io/blog
+- type: Pricing
+  url: https://www.nutrisense.io/products/cgm-plans
+- type: Login
+  url: https://members.nutrisense.io/video-calls/sign-in
+- type: TermsOfService
+  url: https://www.nutrisense.io/legal/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.nutrisense.io/legal/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/nutrisense
+- type: LLMsTxt
+  url: llms/nutrisense-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1
